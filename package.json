@@ -1,0 +1,20 @@
+{
+  "name": "ipro-signatures",
+  "version": "1.0.0",
+  "description": "Custom Clothing Line Website",
+  "main": "app.js",
+  "scripts": {
+    "sass": "node-sass -w public/scss/ -o public/css/ --recursive"
+  },
+  "keywords": [
+    "clothing",
+    "signatures"
+  ],
+  "author": "Ekene Idiagbor",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "node-sass": "^4.11.0"
+  }
+}
