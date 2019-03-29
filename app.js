@@ -5,9 +5,9 @@ app.set("view engine", "ejs");
 
 app.use("/public", express.static("public"));
 
-app.get("/", (req, res) => {
-   return res.render("index");
-});
+//importing major routes controller
+let majorRoutes = require("./routes/major");
+app.use("/", majorRoutes);
 
 app.listen(3000);
 console.log("Now listening to port 3000");
