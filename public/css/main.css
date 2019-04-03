@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Germania+One|Pacifico|Anton|Cinzel");
+@import url("https://fonts.googleapis.com/css?family=Germania+One|Pacifico|Anton|Cinzel|Shadows+Into+Light|Righteous");
 * {
   box-sizing: border-box; }
 
@@ -73,7 +73,85 @@ footer .footer-icons {
 footer .copyrights {
   margin-left: 45%; }
 
-/* Men Page Stling*/
+/* Men and Women Page Shared Classes Page Stling*/
+.section-1.men {
+  background-image: url("/public/images/man-pose-beside-water-store-unsplash.jpg");
+  background-size: cover;
+  background-position: center; }
+  .section-1.men h1 {
+    position: relative;
+    left: 15%;
+    top: 30%;
+    margin-bottom: 10%;
+    font-family: Anton, sans-serif;
+    font-size: 4rem;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    color: white; }
+    .section-1.men h1 span {
+      font-family: Shadows Into Light, cursive;
+      font-size: 3rem;
+      letter-spacing: 5px;
+      margin-left: 7%; }
+  .section-1.men a {
+    border: white 3px solid;
+    width: 500px;
+    height: 50px;
+    color: white;
+    background: transparent;
+    font-family: Righteous, cursive;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 40%;
+    margin-bottom: 20%;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    left: 12%; }
+    .section-1.men a:hover {
+      color: white;
+      text-decoration: none; }
+
+.section-1.women {
+  background-image: url("/public/images/shamim-nakhaei-69202-unsplash.jpg");
+  background-size: cover;
+  height: 100%; }
+  .section-1.women h1 {
+    position: relative;
+    left: 15%;
+    top: 15%;
+    margin-bottom: 10%;
+    font-family: Anton, sans-serif;
+    font-size: 4rem;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    color: white; }
+    .section-1.women h1 span {
+      font-family: Shadows Into Light, cursive;
+      font-size: 3rem;
+      letter-spacing: 5px;
+      margin-left: 7%; }
+  .section-1.women a {
+    border: white 3px solid;
+    width: 500px;
+    height: 50px;
+    color: white;
+    background: transparent;
+    font-family: Righteous, cursive;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 50%;
+    margin-bottom: 60%;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    left: 12%; }
+    .section-1.women a:hover {
+      color: white;
+      text-decoration: none; }
+
 .cat-images {
   width: 100%;
   height: 450px; }
@@ -121,14 +199,32 @@ footer .copyrights {
   .connect .col-lg-6.col-md-6 {
     margin-left: 5%; }
 
+.about-img {
+  width: 100%;
+  height: 500px; }
+
 @media screen and (min-width: 425px) and (max-width: 800px) {
   * {
     box-sizing: border-box; }
   html {
     overflow-x: hidden; }
   footer .footer-list {
-    visibility: hidden; } }
+    visibility: hidden; }
+  /* Women Page Styling */
+  .section-1.women h1 {
+    font-size: 3rem; }
+    .section-1.women h1 span {
+      font-size: 2rem; }
+  .section-1.women a {
+    margin-top: 40%;
+    margin-bottom: 50%;
+    font-size: 18px; } }
 
+/* ***************************************
+        **************************************
+        *************************************
+         SMALL SCREEN PHONES (ANDROID AND IPHONES)
+    */
 @media screen and (min-width: 310px) and (max-width: 424px) {
   * {
     box-sizing: border-box; }
@@ -138,4 +234,31 @@ footer .copyrights {
     visibility: hidden; }
   footer .footer-icons {
     margin-left: 30%; }
-  /* Men Page Styling */ }
+  /* Men Page Styling */
+  .section-1.men h1 {
+    left: 25%;
+    font-size: 2rem; }
+    .section-1.men h1 span {
+      font-size: 1.2rem; }
+  .section-1.men a {
+    width: 250px;
+    margin-top: 30%;
+    margin-bottom: 15%;
+    font-size: 18px;
+    margin-left: 1%;
+    padding: 5px 5px; }
+  /* Women Page Styling */
+  .section-1.women h1 {
+    left: 22%;
+    font-size: 2rem; }
+    .section-1.women h1 span {
+      font-size: 1.5rem; }
+  .section-1.women a {
+    width: 250px;
+    margin-top: 30%;
+    margin-bottom: 40%;
+    font-size: 18px;
+    margin-left: 1%;
+    padding: 5px 5px; }
+  [data-aos] {
+    visibility: hidden; } }

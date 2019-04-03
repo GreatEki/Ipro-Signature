@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Germania+One|Pacifico|Anton|Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Germania+One|Pacifico|Anton|Cinzel|Shadows+Into+Light|Righteous');
 
 * {
     box-sizing: border-box;
@@ -99,7 +99,110 @@ footer {
     }
 }
 
-/* Men Page Stling*/
+/* Men and Women Page Shared Classes Page Stling*/
+.section-1.men {
+    background-image: url("/public/images/man-pose-beside-water-store-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+
+
+    h1 {
+        position: relative;
+        left: 15%;
+        top: 30%;
+        margin-bottom: 10%;
+        font-family: Anton, sans-serif;
+        font-size: 4rem;
+        font-weight: bolder;
+        letter-spacing: 4px;
+        color: white;
+
+        span {
+            font-family: Shadows Into Light, cursive;
+            font-size: 3rem;
+            letter-spacing: 5px;
+            margin-left: 7%;
+
+        }
+    }
+
+    a {
+        border: white 3px solid;
+        width: 500px;
+        height: 50px;
+        color: white;
+        background: transparent;
+        font-family: Righteous, cursive;
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 40%;
+        margin-bottom: 20%;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        left: 12%;
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+}
+
+.section-1.women{
+    background-image: url("/public/images/shamim-nakhaei-69202-unsplash.jpg");
+    background-size: cover;
+    height: 100%;
+
+
+    h1 {
+        position: relative;
+        left: 15%;
+        top: 15%;
+        margin-bottom: 10%;
+        font-family: Anton, sans-serif;
+        font-size: 4rem;
+        font-weight: bolder;
+        letter-spacing: 4px;
+        color: white;
+
+        span {
+            font-family: Shadows Into Light, cursive;
+            font-size: 3rem;
+            letter-spacing: 5px;
+            margin-left: 7%;
+
+        }
+    }
+
+    a {
+        border: white 3px solid;
+        width: 500px;
+        height: 50px;
+        color: white;
+        background: transparent;
+        font-family: Righteous, cursive;
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 50%;
+        margin-bottom: 60%;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        left: 12%;
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+}
+
+
 .cat-images {
     width: 100%;
     height: 450px;
@@ -160,6 +263,16 @@ footer {
     }
 
 }
+
+//About US Page Styling 
+.about-img {
+    width: 100%;
+    height: 500px;
+}
+
+
+
+
 //Media Queries
 @media screen and (min-width: 425px) and (max-width: 800px) {
 
@@ -175,9 +288,41 @@ footer {
             visibility: hidden;
         }
     }
+
+    /* Women Page Styling */
+    .section-1.women {
+
+        h1 {
+            font-size: 3rem;
+
+
+            span {
+                font-size: 2rem;
+            }
+        }
+
+        a {
+            margin-top: 40%;
+            margin-bottom: 50%;
+            font-size: 18px;
+        }
+        
+    }
     
     }
    
+
+
+
+
+
+
+    /* ***************************************
+        **************************************
+        *************************************
+         SMALL SCREEN PHONES (ANDROID AND IPHONES)
+    */
+    //Media Query for small screen phones, android and iphones
 @media screen and (min-width: 310px) and (max-width: 424px) {
 
     * {
@@ -198,6 +343,52 @@ footer {
     }
    
     /* Men Page Styling */
+
+    .section-1.men {
+
+        h1 {
+            left: 25%;
+            font-size: 2rem;
+
+            span {
+                font-size: 1.2rem;
+            }
+        }
+
+        a {
+            width: 250px;
+            margin-top: 30%;
+            margin-bottom: 15%;
+            font-size: 18px;
+            margin-left: 1%;
+            padding: 5px 5px;
+        }
+    }
   
+      /* Women Page Styling */
+      .section-1.women {
+
+        h1 {
+            left: 22%;
+            font-size: 2rem;
+
+
+            span {
+                font-size: 1.5rem;
+            }
+        }
+
+        a {
+            width: 250px;
+            margin-top: 30%;
+            margin-bottom: 40%;
+            font-size: 18px;
+            margin-left: 1%;
+            padding: 5px 5px;
+        }
+        
+    }
+
+
     
 }
